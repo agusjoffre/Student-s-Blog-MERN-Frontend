@@ -1,4 +1,5 @@
 import './card.css';
+import { Link } from 'react-router-dom';
 import timeFormat from '../../../utils/dateFormating';
 import calculateReadTime from '../../../utils/timeReadCalc';
 
@@ -20,31 +21,33 @@ export default function Card({ post }) {
           min read
         </p>
       </div>
-      <div
-        className="card"
-        style={{
-          backgroundImage: `url(${post?.banner})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="top">
-          { post?.tags.map((keyword) => (
+      <Link to={`/posts/${post?._id}`}>
+        <div
+          className="card"
+          style={{
+            backgroundImage: `url(${post?.banner})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="top">
+            { post?.tags.map((keyword) => (
+              <p>
+                #
+                {keyword}
+              </p>
+            ))}
+          </div>
+          <div className="bottom">
             <p>
-              #
-              {keyword}
+              {' '}
+              { post?.subtitle }
+              {' '}
             </p>
-          ))}
+          </div>
         </div>
-        <div className="bottom">
-          <p>
-            {' '}
-            { post?.subtitle }
-            {' '}
-          </p>
-        </div>
-      </div>
+      </Link>
       <div className="card-bottom">
         <h1>
           {' '}

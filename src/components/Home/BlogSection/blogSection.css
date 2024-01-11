@@ -29,4 +29,6 @@
     padding-top: 3rem;
     padding-bottom: 4rem;
     overflow-x: scroll;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }

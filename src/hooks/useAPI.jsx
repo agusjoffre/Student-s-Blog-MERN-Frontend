@@ -21,6 +21,7 @@ export default function useAPI(url) {
     try {
       const res = await fetch(`${url}/${id}`);
       const resjson = await res.json();
+      setData(resjson);
       setLoading(false);
       return resjson;
     } catch (err) {

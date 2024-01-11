@@ -26,13 +26,20 @@
 }
 
 .card {
-    
     height: 15rem;
     padding: 1rem;
     width: 18.75rem;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 2px 2px var(--light-dark-color);
+    transition: 0.2s;
+    transform: scale(1.02);
+    cursor: pointer;
+    border: solid 0.1rem var(--light-color);
 }
 
 .card .top {
