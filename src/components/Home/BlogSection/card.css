@@ -1,0 +1,99 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 18.75rem;
+    height: 21.9rem;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.ofauthor {
+    text-align: end;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.timeread {
+    color: var(--ligth-dark-color);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.card {
+    
+    height: 15rem;
+    padding: 1rem;
+    width: 18.75rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .top {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    gap: 0.3rem;
+    background: transparent;
+    overflow: scroll;
+    
+}
+
+.card .top p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    background-color: var(--alert-color);
+    opacity: 0.8;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    width: fit-content;
+
+}
+
+.card .bottom {
+    text-align: baseline;
+    padding-top: 7rem;
+    overflow-y: scroll;
+}
+
+.card .bottom p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding: 0.2rem;
+    border-radius: 10px;
+    width: fit-content;
+    background: linear-gradient(to top, var(--secondary-color), rgba(0, 0, 0, 0.152));
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.card-bottom  {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-bottom h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+    color: var(--secondary-color);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-bottom p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--light-dark-color);
+}

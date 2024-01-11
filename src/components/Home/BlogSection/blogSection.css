@@ -1,0 +1,32 @@
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16.6rem;
+    padding-top: 5rem;
+    margin-right: 2rem;
+}
+
+.blog-section-top {
+    padding-bottom: 1.2rem;
+    border-bottom: solid 1px var(--light-color);
+    
+}
+
+.blog-section-top h2  {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.blog-section-top strong {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.card-allcontainer {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    overflow-x: scroll;
+}
