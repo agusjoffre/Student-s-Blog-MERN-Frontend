@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/posts" element={<NotFound />} />
+        <Route path="/posts" />
         <Route path="/posts/:id" element={<Post />} />
         <Route path="/create" element={<CreatorPage />} />
         <Route path="/about" element={<NotFound />} />

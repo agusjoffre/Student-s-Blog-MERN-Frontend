@@ -44,7 +44,6 @@ export default function useAPI(url) {
         ...prevData,
         resjson,
       ]));
-      console.log(resjson);
       setLoading(false);
     } catch (err) {
       setLoading(false);

@@ -16,10 +16,7 @@ export default function ImageCircleContainer({ position, image }) {
   } else if (position === 'right') {
     containerStyle.borderTopLeftRadius = '201px';
     containerStyle.borderBottomLeftRadius = '201px';
-    containerStyle.width = '350px';
-    containerStyle.position = 'relative';
-    containerStyle.left = '100px';
-    containerStyle.right = '0';
+    containerStyle.width = '500px';
     containerStyle.background = `url(${rightImgSrc}) center repeat`;
   }
 
