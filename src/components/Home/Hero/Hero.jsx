@@ -4,6 +4,7 @@ import ImageCircleContainer from './ImageCircleContainer';
 import useAPI from '../../../hooks/useAPI';
 import { URL_API } from '../../../utils/constants';
 import './hero.css';
+import Loading from '../../Loading/Loading';
 
 export default function Hero() {
   const { data, isLoading } = useAPI(`${URL_API}/posts/`);
@@ -26,17 +27,7 @@ export default function Hero() {
   return (
     <main>
       { isLoading ? (
-        <div style={{
-          display: 'flex', justifyContent: 'center', alignItems: 'center',
-        }}
-        >
-          <p style={{
-            fontSize: '2rem', fontWeight: '600', color: 'var(--secondary-color)',
-          }}
-          >
-            Cargando...
-          </p>
-        </div>
+        <Loading />
       ) : (
         <>
           <ImageCircleContainer position="left" image={post?.banner} />

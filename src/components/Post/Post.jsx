@@ -5,6 +5,7 @@ import DOMPurify from 'dompurify';
 import useAPI from '../../hooks/useAPI';
 import { URL_API } from '../../utils/constants';
 import './post.css';
+import Loading from '../Loading/Loading';
 
 export default function Post() {
   const { id } = useParams();
@@ -19,11 +20,7 @@ export default function Post() {
   return (
     <div className="post-container">
       { isLoading ? (
-        <p
-          style={{ fontSize: '2rem', fontWeight: '600', color: 'var(--secondary-color)' }}
-        >
-          Cargando...
-        </p>
+        <Loading />
       ) : (
         <>
           <div

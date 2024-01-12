@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './header.css';
 
-const logosrc = '/logo.svg';
+const logosrc = '/logo.png';
 
 export default function Header() {
   return (
