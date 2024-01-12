@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import './header.css';
 
-const logosrc = '/public/logo.svg';
+const logosrc = '/logo.svg';
 
 export default function Header() {
   return (
     <header>
       <div className="left">
         <Link to="/">
-          <img src={logosrc} alt="" />
+          <img src={logosrc} alt="Home" />
         </Link>
         <Link to="/create">
           <button className="btn-header btn-alert">Crear post</button>
