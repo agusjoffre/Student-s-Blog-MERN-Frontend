@@ -59,7 +59,6 @@ export default function Hero() {
           <ImageCircleContainer position="right" image={post?.banner} />
         </>
       )}
-
     </main>
   );
 }

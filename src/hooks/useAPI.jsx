@@ -42,8 +42,9 @@ export default function useAPI(url) {
       const resjson = await res.json();
       setData((prevData) => ([
         ...prevData,
-        ...resjson,
+        resjson,
       ]));
+      console.log(resjson);
       setLoading(false);
     } catch (err) {
       setLoading(false);

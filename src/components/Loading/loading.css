@@ -1,0 +1,27 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    color: var(--alert-color);
+}
+
+.loading-text {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: 'Lora', sans-serif;
+    color: var(--alert-color);
+    text-align: center;
+    animation: charge 1s infinite alternate; 
+}
+
+@keyframes charge {
+    from {
+        color: var(--alert-color);
+    }
+    to {
+        color: var(--primary-color);
+    }
+}

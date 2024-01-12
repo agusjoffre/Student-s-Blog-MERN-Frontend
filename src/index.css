@@ -19,6 +19,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -58,4 +64,15 @@ a {
   text-decoration: none;
   color: inherit;
   background: inherit;
+}
+
+.btn-normal {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 20px;
+}
+.btn-normal:hover {
+  background-color: var(--alert-color);
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
 }
