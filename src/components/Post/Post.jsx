@@ -15,7 +15,7 @@ export default function Post() {
     getOneData(id);
   }, [data]);
 
-  const purifiedContent = DOMPurify.sanitize(data?.content);
+  const purifiedContent = DOMPurify.sanitize(data?.content);s
 
   return (
     <div className="post-container">

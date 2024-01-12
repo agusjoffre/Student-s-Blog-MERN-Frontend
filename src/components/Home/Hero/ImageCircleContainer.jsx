@@ -2,7 +2,7 @@ import './hero.css';
 
 export default function ImageCircleContainer({ position, image }) {
   const postImgSrc = image;
-  const rightImgSrc = '/public/logo.svg';
+  const rightImgSrc = '/logo.png';
 
   const containerStyle = {
     width: '796px',
@@ -16,9 +16,9 @@ export default function ImageCircleContainer({ position, image }) {
   } else if (position === 'right') {
     containerStyle.borderTopLeftRadius = '201px';
     containerStyle.borderBottomLeftRadius = '201px';
-    containerStyle.width = '230px';
+    containerStyle.width = '350px';
     containerStyle.position = 'relative';
-    containerStyle.left = '220px';
+    containerStyle.left = '100px';
     containerStyle.right = '0';
     containerStyle.background = `url(${rightImgSrc}) center repeat`;
   }
