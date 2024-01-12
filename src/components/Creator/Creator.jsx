@@ -8,6 +8,20 @@ import { URL_API } from '../../utils/constants';
 import Loading from '../Loading/Loading';
 
 export default function CreatorPage() {
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'underline', 'strike', 'blockquote'],
+      [{ list: 'ordered' }, { list: 'bullet' }, { indent: '-1' }, { indent: '+1' }],
+      ['link'],
+      ['clean'],
+    ],
+  };
+  modules.clipboard = {
+    matchVisual: false,
+    bounds: { target: '_blank' },
+  };
+
   const { sendData, isLoading } = useAPI(`${URL_API}/posts`);
 
   const [formData, setFormData] = useState({
@@ -26,7 +40,6 @@ export default function CreatorPage() {
     await e.preventDefault();
     await sendData(formData);
     if (isLoading === false) {
-      console.log('redirect');
       navigate('/');
     }
   };
@@ -81,6 +94,7 @@ export default function CreatorPage() {
             </div>
             <div className="create-container-content">
               <ReactQuill
+                modules={modules}
                 required
                 className="quill-area"
                 theme="snow"

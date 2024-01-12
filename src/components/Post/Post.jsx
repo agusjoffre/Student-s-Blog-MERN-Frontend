@@ -1,5 +1,7 @@
+/* eslint-disable react/no-danger */
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
+import DOMPurify from 'dompurify';
 import useAPI from '../../hooks/useAPI';
 import { URL_API } from '../../utils/constants';
 import './post.css';
@@ -11,6 +13,8 @@ export default function Post() {
   useEffect(() => {
     getOneData(id);
   }, [data]);
+
+  const purifiedContent = DOMPurify.sanitize(data?.content);
 
   return (
     <div className="post-container">
@@ -43,9 +47,7 @@ export default function Post() {
                 </h3>
               </div>
             </div>
-            <div className="content">
-              {data?.content}
-            </div>
+            <div className="content" dangerouslySetInnerHTML={{ __html: purifiedContent }} />
             <div className="footer">
               <p>
                 Palabras clave:

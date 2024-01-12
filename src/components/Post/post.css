@@ -51,16 +51,29 @@ section {
     font-weight: 600;
 }
 
-.content {
-    line-height: 1.5;
-    font-size: 1rem;
-    font-weight: 300;
+.content h1,
+.content h2,
+.content h3,
+.content p,
+.content a,
+.content em,
+.content strong,
+.content code,
+.content blockquote,
+.content ul,
+.content ol,
+.content hr,
+.content table,
+.content li,
+.content u {
+    color: var(--secondary-color);
+    font-family: 'Lora', 'Noto Sans', sans-serif;
 }
+
 
 .header h1,
 .header h2,
 .header h3,
-.content,
 .footer p,
 .footer a {
     color: var(--secondary-color);
