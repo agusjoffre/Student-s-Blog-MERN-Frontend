@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Post from './components/Post/Post';
 import CreatorPage from './components/Creator/Creator';
 import NotFound from './components/404';
+import SignPage from './components/SignIn-SignUp/SignPage';
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
         <Route path="/create" element={<CreatorPage />} />
         <Route path="/about" element={<NotFound />} />
         <Route path="/documents" element={<NotFound />} />
-        <Route path="/register" element={<NotFound />} />
-        <Route path="/login" element={<NotFound />} />
+        <Route path="/register" element={<SignPage />} />
+        <Route path="/login" element={<SignPage />} />
       </Routes>
     </>
   );

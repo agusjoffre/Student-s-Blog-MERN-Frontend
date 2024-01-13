@@ -1,0 +1,52 @@
+.sign-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: rgba(255, 170, 0, 0.077);
+    border: solid 2px var(--alert-color);
+    box-shadow: 3px 3px 3px 3px rgba(201, 201, 201, 0.2);
+    border-radius: 10px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+
+.input-sign {
+    width: 100%;
+    height: 3rem;
+    color: var(--secondary-color);
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px var(--secondary-color);
+    outline: none;
+    padding-left: 1rem;
+}
+
+
+
+.form-sign {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.label-sign {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+
+.sign-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
